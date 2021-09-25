@@ -21,7 +21,7 @@ def get_lista():
     response = Controller.get_lista(name=name)
     return jsonify(data=response)
 
-@api.route('/lista', methods=['POST'])
+@api.route('/guardar', methods=['POST'])
 def post_save():
     name = request.args.post('name')
     identification = request.args.post('identification')
