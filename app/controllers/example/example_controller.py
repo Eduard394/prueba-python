@@ -53,7 +53,7 @@ class ExampleController:
             raise InternalServerError(e)
 
     @staticmethod
-    def save_model(name=name,identification=identification):
+    def save_model(name,identification):
         try:
             usuario = ExampleModel(
             name,
